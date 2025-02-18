@@ -29,57 +29,9 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <!-- <style>
-
-    .contact-section {
-        text-align: left;
-        padding: 30px;
-        background: #ddd;
-        padding-bottom: 50px;
-    }
-    .contact-header h2 {
-        color: #005b9b;
-        font-weight: bold;
-    }
-    .contact-header h3 {
-        color: #005b9b;
-        font-weight: bold;
-    }
-    .contact-header p {
-        color: #666;
-        margin-bottom: -5rem;
-    }
-    .buttons {
-      margin: -10px 50px;
-      text-align: end;
-        
-    }
-    .btn {
-        padding: 10px 20px;
-        border: none;
-        font-size: 16px;
-        cursor: pointer;
-        border-radius: 20px;
-        margin: 10px;
-    }
-    .blue {
-        background: #005b9b;
-        color: white;
-    }
-    .orange {
-        background: #f25c05;
-        color: white;
-    }
-    .info {
-     
-      text-align: justify;
-      font-size: large;
-      letter-spacing: normal;
-  }
-       
-   
   
-  </style> -->
+
+ 
 
 </head>
 
@@ -92,16 +44,45 @@
       </a>
       <nav id="navmenu" class="navmenu d-none d-lg-block">
         <ul class="d-flex">
-          <li><a href="/index.html" class="active">Home<br></a></li>
+          <li><a href="./index.html" class="active">Home<br></a></li>
           <li><a href="./about.html" class="active">About</a></li>
           <li><a href="#services" class="active">Services</a></li>
           <li><a href="#portfolio-details" class="active">Projects</a></li>
-          <li><a href="#team" class="active">Team</a></li>
+          <li><a href="#team" class="active">Teams</a></li>
           <li><a href="./Contact.html" class="active">Contact</a></li>
         </ul>
       </nav>
-      <i class="mobile-nav-toggle d-lg-none bi bi-list"></i>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+      <i class="mobile-nav-toggle d-lg-none bi bi-list"></i></a>
+  </div>
+  <div class="mobile-container">
+    <!-- Hidden Menu Links -->
+    <div id="myLinks">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="#Services">Services</a>
+      <a href="#portfolio-details">Projects</a>
+      <a href="#team">Team</a>
+      <a href="./Contact.html">Contact</a>
     </div>
+  </div>
+  <script>
+  function toggleMenu() {
+    var menu = document.getElementById("myLinks");
+    
+    if (menu.style.display === "flex") {
+      menu.classList.remove("show");
+      menu.classList.add("hide");
+      setTimeout(() => {
+        menu.style.display = "none";
+      }, 300);
+    } else {
+      menu.style.display = "flex";
+      menu.classList.remove("hide");
+      menu.classList.add("show");
+    }
+  }
+  </script>
   </header>
   <main class="main">
  
@@ -130,15 +111,15 @@
 
     <!-- About Section -->
     <section id="about" class="about section">
-
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
+        <img src="./assets/img/maxwat img/about.jpg" alt="" data-aos="fade-in" class="">
         <h2>About Us<br></h2>
         <p>Max Watt innovative and sustainable energy solutions
           Welcome to Max Watt Energy, your trusted partner in harnessing the power of the sun. We are a dynamic solar energy company committed to delivering innovative and sustainable energy solutions.
-            At Max Watt Energy, we specialize in providing end-to-end services as an EPC (Engineering, Procurement, and Construction) contractor.</p>
+            At Max Watt Energy, we specialize in providing end-to-end services as an EPC (Engineering, Procurement, and Construction) contractor Customers appreciate their expert guidance, efficient project execution.</p>
                   <a href="./about.html" class="btn">
-              Explore
+              Explore More
             </a>
       </div><!-- End Section Title -->
     </section><!-- /About Section -->
@@ -151,7 +132,7 @@
               <div class="col-md-6">
                   <div class="solution-card p-4">
                       <h3 class="solution-title">Residential Solar Solutions</h3>
-                      <p>MaxWatt Energy offers Hybrid and Grid-Tied residential solar solutions designed to meet the energy needs of households efficiently and sustainably.</p>
+                      <p>MaxWatt Energy offers Hybrid and Grid-Tied residential solar solutions designed to meet the energy needs of households efficiently and sustainably .</p>
                       <a href="./ResidentialSolarSolutions.html" class="explore-btn">EXPLORE MORE</a>
                   </div>
               </div>
@@ -167,34 +148,24 @@
   </section>
     <!-- Services Section -->
     <section id="services" class="services section light-background">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>With a focus on reliability, quality, and sustainability, we aim to empower homes, businesses, and industries with renewable energy solutions that make a difference. Choose Max Watt Energy to take the first step toward a brighter, greener future.</p>
-      </div><!-- End Section Title -->
+        <p>With a focus on reliability, quality, and sustainability, we aim to empower homes, businesses, and industries with renewable energy solutions that make a difference. Choose Max Watt Energy to take the first step toward a brighter, greener future with cutting-edge technology and expert support.</p>
+      </div>
    
-     
       <div class="vcex-spacing wpex-w-100 wpex-clear" style="height:70px;"></div>
       <div class="container">
-
         <div class="row gy-4">
-
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item item-black position-relative">
               <div class="icon">
-                <!-- <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
-                </svg>
-                <i class="bi bi-cpu"></i> -->
                 <img src="./assets/img/maxwat img/ENP.jpeg" width="100" height="100" viewBox="0 0 600 600" stroke="none" stroke-width="0" fill="#f5f5f5" alt="">
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="#services" class="stretched-link">
                 <h2 class="vcex-icon-box-heading wpex-heading wpex-text-md wpex-mb-10">Engineering Procurement and Construction</h2>
-              </a>
-              
+              </a>     
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item item-cyan position-relative">
@@ -202,71 +173,66 @@
                
                 <img src="./assets/img/maxwat img/SD.jpeg" width="100" height="100" viewBox="0 0 600 600" stroke="none" stroke-width="0" fill="#f5f5f5" alt="">
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="#services" class="stretched-link">
                 <h2 class="vcex-icon-box-heading wpex-heading wpex-text-md wpex-mb-10">Survey and Design</h2>
               </a>
              
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item item-orange position-relative">
               <div class="icon">
                 <img src="./assets/img/maxwat img/INS.jpeg" width="100" height="100" viewBox="0 0 600 600" stroke="none" stroke-width="0" fill="#f5f5f5" alt="">
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="#services" class="stretched-link">
                 <h2 class="vcex-icon-box-heading wpex-heading wpex-text-md wpex-mb-10">Installation and commissioning</h2>
               </a>
               
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item item-teal position-relative">
               <div class="icon">
                 <img src="./assets/img/maxwat img/MTS.jpeg" width="100" height="100" viewBox="0 0 600 600" stroke="none" stroke-width="0" fill="#f5f5f5" alt="">
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="#services" class="stretched-link">
                 <h2 class="vcex-icon-box-heading wpex-heading wpex-text-md wpex-mb-10">Monitoring and Maintenance Services</h2>
               </a>
              
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item item-red position-relative">
               <div class="icon">
                 <img src="./assets/img/maxwat img/PC.jpeg" width="100" height="100" viewBox="0 0 600 600" stroke="none" stroke-width="0" fill="#f5f5f5" alt="">
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="#services" class="stretched-link">
                 <h2 class="vcex-icon-box-heading wpex-heading wpex-text-md wpex-mb-10">AfterSales and Panel Cleaning</h2>
               </a>
               
-              <a href="service-details.html" class="stretched-link"></a>
+              <a href="#services" class="stretched-link"></a>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item item-indigo position-relative">
               <div class="icon">
                 <img src="./assets/img/maxwat img/logo.png" width="100" height="100" viewBox="0 0 600 600" stroke="none" stroke-width="0" fill="#f5f5f5" alt="">
               </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Battery Storage Solutions</h3>
+              <a href="#services" class="stretched-link">
+                <h2 class="vcex-icon-box-heading wpex-heading wpex-text-md wpex-mb-10">Battery Storage Solutions</h2>
               </a>
               
-              <a href="service-details.html" class="stretched-link"></a>
+              <a href="#services" class="stretched-link"></a>
             </div>
-          </div><!-- End Service Item -->
-
-          
-
-
-        </div>
-
+          </div>
+         </div>
       </div>
-
     </section><!-- /Services Section -->
+
     <section id="portfolio-details" class="portfolio-details section">
 
       <div class="container" data-aos="fade-up">
@@ -277,9 +243,9 @@
           <script type="application/json" class="swiper-config">
             {
               "loop": true,
-              "speed": 1000,
+              "speed": 1500,
               "autoplay": {
-                "delay": 50
+                "delay": 500
               },
               "slidesPerView": "auto",
               "navigation": {
@@ -296,10 +262,10 @@
           <div class="swiper-wrapper align-items-center">
             <div class="swiper-slide">
              <div class="slider-cont">
-              <img src="./assets/img/maxwat img/Solar Panel 1.jpeg" alt="">
+              <img src="./assets/img/maxwat img/img1.jpeg" alt="">
               </div>
             </div>
-            <div class="swiper-slide">
+             <div class="swiper-slide">
              <div class="slider-cont">
               <img src="./assets/img/maxwat img/p2.jpeg" alt="">
               </div>
@@ -311,7 +277,7 @@
             </div>
             <div class="swiper-slide">
              <div class="slider-cont">
-              <img src="./assets/img/maxwat img/p4.jpeg" alt="">
+              <img src="./assets/img/maxwat img/img1.jpeg" alt="">
               </div>
             </div>
             <div class="swiper-slide">
@@ -343,7 +309,7 @@
              <div class="slider-cont">
               <img src="./assets/img/maxwat img/p12.jpeg" alt="">
               </div>
-            </div>
+            </div> 
            
     
           </div>
@@ -365,12 +331,12 @@
                 <div class="carousel-item active">
                     <div class="container">
                         <div class="testimonial-card col-md-8 col-lg-6 mx-auto">
-                            <h5>Saad (Islamabad)</h5>
+                            <h5>Awais (Islamabad-G14)</h5>
                             <div class="rating">★★★★★</div>
                             <p class="quote-icon">“</p>
                             <p class="testimonial-text">
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Phasellus hendrerit. Pellentesque aliquet nibh nec urna."
+                                "MaxWatt Energy provides tailored solar EPC solutions in Pakistan,
+                                ensuring quality installations and dedicated after-sales support."
                             </p>
                         </div>
                     </div>
@@ -379,12 +345,12 @@
                 <div class="carousel-item">
                     <div class="container">
                         <div class="testimonial-card col-md-8 col-lg-6 mx-auto">
-                            <h5>Ali (Lahore)</h5>
+                            <h5>Ali (Islamabad-G13)</h5>
                             <div class="rating">★★★★★</div>
                             <p class="quote-icon">“</p>
                             <p class="testimonial-text">
-                                "Aenean commodo ligula eget dolor. Aenean massa. 
-                                Cum sociis natoque penatibus et magnis dis parturient montes."
+                                "MaxWatt Energy delivers high-quality solar EPC solutions
+                                 with professional installation and reliable after-sales service."
                             </p>
                         </div>
                     </div>
@@ -393,12 +359,12 @@
                 <div class="carousel-item">
                     <div class="container">
                         <div class="testimonial-card col-md-8 col-lg-6 mx-auto">
-                            <h5>Zara (Karachi)</h5>
+                            <h5>Zara (Rawalpindi)</h5>
                             <div class="rating">★★★★★</div>
                             <p class="quote-icon">“</p>
                             <p class="testimonial-text">
-                                "Nullam dictum felis eu pede mollis pretium. Integer tincidunt. 
-                                Cras dapibus. Vivamus elementum semper nisi."
+                                "Competitive pricing and excellent customer support make them a trusted
+                                 choice for solar energy solutions in Pakistan."
                             </p>
                         </div>
                     </div>
@@ -445,7 +411,7 @@
               <a href="service-details.html" class="stretched-link">
                 <h3>Waqas Akbar - CEO</h3>
               </a>
-              <p>He is a highly skilled Electrical Engineer with over 12 years of hands-on experience in the industry. He began his career as a Project Engineer and, after two years, expanded his expertise by working in the Gulf countries with reputed companies for four years. Upon returning to Pakistan, he continued to grow professionally, taking on the role of Manager of Operations and later advancing to the Director level at the number 1 solar company of Pakistan. His extensive experience in both technical and managerial roles, combined with a global perspective, makes him a valuable leader in driving projects to successful completion and ensuring operational excellence across diverse teams.</p>
+              <p class="team-Paragraph">He is a highly skilled Electrical Engineer with over 12 years of hands-on experience in the industry. He began his career as a Project Engineer and, after two years, expanded his expertise by working in the Gulf countries with reputed companies for four years. Upon returning to Pakistan, he continued to grow professionally, taking on the role of Manager of Operations and later advancing to the Director level at the number 1 solar company of Pakistan. His extensive experience in both technical and managerial roles, combined with a global perspective, makes him a valuable leader in driving projects to successful completion and ensuring operational excellence across diverse teams.</p>
             </div>
           </div><!-- End Service Item -->
     
@@ -457,7 +423,7 @@
               <a href="service-details.html" class="stretched-link">
                 <h3>Arslan Anwar - COO</h3>
               </a>
-              <p>An experienced Electrical Engineer with over 7 years of hands-on experience in the solar industry. His career journey began as a Survey & Design Engineer, where he developed a strong foundation in electrical systems design and project planning.
+              <p class="team-Paragraph">An experienced Electrical Engineer with over 7 years of hands-on experience in the solar industry. His career journey began as a Survey & Design Engineer, where he developed a strong foundation in electrical systems design and project planning.
                 Over the years, he had advanced through various roles, including Project Engineer, Assistant Manager of Operations, and ultimately Manager of Operations in the number 1 solar company of Pakistan.  team leadership, and operational management, contributing to the successful delivery of complex projects. He is passionate about leveraging his expertise to drive innovation and ensure the seamless operation of engineering solutions to his venture</p>
             </div>
           </div><!-- End Service Item -->
@@ -470,70 +436,21 @@
               <a href="service-details.html" class="stretched-link">
                 <h3>Fazal Ur Rehman - CTO</h3>
               </a>
-              <p>He is an experienced Electrical Engineer with over 10 years of hands-on experience in the field. Starting their career as an System Assembling Engineer, he quickly demonstrated a strong technical aptitude and was promoted through several key roles, including Senior Manager Supply Chain, Design Engineer, and Senior Project Engineer for the Installation Team at the number 1 solar company of Pakistan. With a diverse background across assembly, design, and project management, he brings a wealth of knowledge in streamlining operations, leading cross-functional teams, and driving the successful execution of engineering projects.
+              <p class="team-Paragraph">He is an experienced Electrical Engineer with over 10 years of hands-on experience in the field. Starting their career as an System Assembling Engineer, he quickly demonstrated a strong technical aptitude and was promoted through several key roles, including Senior Manager Supply Chain, Design Engineer, and Senior Project Engineer for the Installation Team at the number 1 solar company of Pakistan. With a diverse background across assembly, design, and project management, he brings a wealth of knowledge in streamlining operations, leading cross-functional teams, and driving the successful execution of engineering projects.
                 Fazal brings a strong background in project management, engineering,.</p>
               </p>
             </div>
           </div><!-- End Service Item -->
-    
-          <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative text-center">
-              <div class="d-flex justify-content-center align-items-center">
-                <img src="./assets/img/IT.png" width="100" height="100" alt="IT Consultancy">
-              </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>IT Consultancy Team</h3>
-              </a>
-              <p>Providing strategic IT guidance to optimize technology and drive business growth.</p>
-            </div>
-          </div>
-    
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-red position-relative text-center">
-              <div class="d-flex justify-content-center align-items-center">
-                <img src="./assets/img/digital.png" width="100" height="100" alt="Digital Marketing">
-              </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Digital Marketing Team</h3>
-              </a>
-              <p>Leveraging SEO, social media, and paid ads to boost online presence.</p>
-            </div>
-          </div>
-    
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item item-pink position-relative text-center">
-              <div class="d-flex justify-content-center align-items-center">
-                <img src="./assets/img/services.jpg" width="100" height="100" alt="IT Solutions">
-              </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>IT Solutions</h3>
-              </a>
-              <p>Offering end-to-end IT solutions that improve efficiency, security, and performance across all aspects of your business.</p>
-            </div>
-          </div> -->
-    
         </div>
-    
       </div>
-    
     </section>
-    
-    
 
-
-
-
-   
-
-   
- 
-    
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
+        <h2>Contact Us</h2>
        
       </div><!-- End Section Title -->
 
@@ -580,58 +497,61 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-               
-
-                
-                  <button class="vcex-contact-form__submit vcex-contact-form__submit--full theme-button" type="submit">Submit Form</button>
-                </div>
-
+            <section class="contact-form-section">
+              <div class="container position-relative">
+                                                                                                                                      
+                  
+                  <div class="row justify-content-center">
+                      <div class="col-md-8">
+                        
+                          <div class="contact-form-container">
+                              
+                              <h3 class="text-center mb-4">Contact Us</h3>
+                              <form>
+                                  <div class="mb-3">
+                                      <label for="name" class="form-label">Full Name</label>
+                                      <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                                  </div>
+                                  <div class="mb-3">
+                                      <label for="email" class="form-label">Email Address</label>
+                                      <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                  </div>
+                                  <div class="mb-3">
+                                      <label for="message" class="form-label">Message</label>
+                                      <textarea class="form-control" id="message" rows="4" placeholder="Your message" required></textarea>
+                                  </div>
+                                  <div class="text-center">
+                                      <button type="submit" class="btn">Send Message</button>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div> 
               </div>
-            </form>
+            </section>
           </div><!-- End Contact Form -->
 
         </div>
 
       </div>
 
-    </section><!-- /Contact Section -->
-    <!-- Call To Action Section -->
-    <!-- <section class="contact-section">
-      <div class="contact-header">
-          <h2>Want To Chat?</h2>
-          <h3>Feel Free To Contact Our Team.</h3>
-          <p>If you have anything in mind just contact our expert.</p>
-          <div class="buttons">
-              <button class="btn blue">Contact US</button>
-              <button class="btn orange">Free Survey</button>
-          </div>
+    </section>
+  <section class="contact-section">
+    <div class="contact-header">
+        <h2>Want To Chat?</h2>
+        <h3>Feel Free To Contact Our Team.</h3>
+        <p>If you have anything in mind just contact our expert.</p>
+        <div class="buttons">
+          <!-- <button class="btn blue">Contact US</button> -->
+          <a href="./Contact.html" class="btn blue">Contact Us</a>
+          <a href="./Contact.html" class="btn orange">Free Survey</a>
+         
       </div>
-     
-  </section> -->
+    </div>
+   
+</section>
   </main>
+ 
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-brand">
@@ -643,21 +563,12 @@
         </div>
 
         <!-- Company Links -->
-        <div class="col-lg-2 col-6 footer-links">
+        <div class="info">
           <h4>Contact Us</h4>
           <hr class="divider">
-          <ul>
-            <a href="https://www.facebook.com/maxwattenergy2/" target="_blank">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/maxwatt-energy/" target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://www.instagram.com/maxwatt_energy1/" target="_blank">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-           
-          </ul>
+            <p><i class="bi bi-envelope flex-shrink-0"></i>Info@maxwatt.pk</p>
+            <p><i class="bi bi-telephone flex-shrink-0"></i>+92 03006299866</p>
+            <p><i class="bi bi-geo-alt flex-shrink-0"></i>Office No.1Ground Floor,<br>New Climate Plaza2,St#3 G-13/2,Islamabad</p>
         </div>
 
    

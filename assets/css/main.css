@@ -191,57 +191,6 @@ h6 {
   }
 }
 
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Global Header
@@ -787,7 +736,7 @@ section,
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 35px;
   font-weight: 700;
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -796,7 +745,8 @@ section,
 
 .section-title p {
   margin-bottom: 0;
-  
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
@@ -1191,13 +1141,14 @@ section,
 .solutions-section h2 {
   font-weight: bold;
   color: #005b9b;
-  font-size: 45px;
+  font-size: 5px;
+  text-transform: uppercase;
 }
 .solution-card {
   border: 1px solid #005b9b;
   border-radius: 20px;
   padding: 20px 20px 20px 20px;
-  text-align: left;
+  text-align: justify;
   transition: all 0.3s ease;
   background: white;
   display: flex;
@@ -1411,9 +1362,9 @@ section,
 --------------------------------------------------------------*/
 #headline-184-52 {
   text-align: center;
-  font-size: 50px;
-  color: 
-  #005b9b;
+  font-size: 35px;
+  color:#005b9b;
+  text-transform: uppercase;
 }
 
 .portfolio .portfolio-filters {
@@ -1589,124 +1540,8 @@ section,
   opacity: 1;
   bottom: 15px;
 }
-
-/*--------------------------------------------------------------
-# Pricing Section
---------------------------------------------------------------*/
-.pricing .pricing-item {
-  background-color: var(--surface-color);
-  padding: 60px 40px;
-  box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);
-  height: 100%;
-  position: relative;
-}
-
-.pricing h3 {
-  font-weight: 600;
-  margin-bottom: 15px;
-  font-size: 20px;
-}
-
-.pricing h4 {
-  font-size: 48px;
-  color: var(--accent-color);
-  font-family: var(--heading-font);
-  font-weight: 400;
-}
-
-.pricing h4 sup {
-  font-size: 28px;
-}
-
-.pricing h4 span {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
-  font-size: 18px;
-}
-
-.pricing ul {
-  padding: 20px 0;
-  list-style: none;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  text-align: left;
-  line-height: 20px;
-}
-
-.pricing ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-
-.pricing ul i {
-  color: #059652;
-  font-size: 24px;
-  padding-right: 3px;
-}
-
-.pricing ul .na {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
-}
-
-.pricing ul .na i {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
-}
-
-.pricing ul .na span {
-  text-decoration: line-through;
-}
-
-.pricing .buy-btn {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  background-color: var(--background-color);
-  display: inline-block;
-  padding: 8px 35px 10px 35px;
-  border-radius: 4px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 60%);
-  transition: none;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: var(--heading-font);
-  transition: 0.3s;
-}
-
-.pricing .buy-btn:hover {
-  background: var(--accent-color);
-  border-color: var(--accent-color);
-  color: var(--contrast-color);
-}
-
-.pricing .featured {
-  z-index: 10;
-}
-
-.pricing .featured .pricing-item {
-  background: var(--accent-color);
-}
-
-@media (min-width: 992px) {
-  .pricing .featured .pricing-item {
-    transform: scale(1.02, 1.1);
-  }
-}
-
-.pricing .featured h3,
-.pricing .featured h4,
-.pricing .featured h4 span,
-.pricing .featured ul,
-.pricing .featured ul .na,
-.pricing .featured ul i,
-.pricing .featured ul .na i {
-  color: var(--contrast-color);
-}
-
-.pricing .featured .buy-btn {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  border-color: var(--contrast-color);
-}
-
-.pricing .featured .buy-btn:hover {
-  background: color-mix(in srgb, var(--background-color), transparent 92%);
+.team-Paragraph{
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
@@ -1804,7 +1639,7 @@ section,
 
 .contact .info-item i {
   color: var(--contrast-color);
-  background: var(--accent-color-1);
+  background: #005b9b;
   font-size: 20px;
   width: 44px;
   height: 44px;
@@ -2186,4 +2021,102 @@ section,
   font-size: 24px;
   font-weight: bold;
   color: #333;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #333;
+  height: auto;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Top Navigation */
+.topnav {
+  background-color: #005b9b;
+  position: relative;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topnav .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.topnav .icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.topnav .icon:hover {
+  transform: scale(1.1);
+}
+
+/* Dropdown Menu */
+#myLinks {
+  display: none;
+  flex-direction: column;
+ 
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+}
+
+#myLinks a {
+  color: white;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  transition:  0.3s ease;
+
+}
+
+#myLinks a:hover {
+  background: #005b9b;
+  color: white;
+  
+}
+
+/* Slide Down Animation */
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 200px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    max-height: 200px;
+    opacity: 1;
+  }
+  to {
+    max-height: 0;
+    opacity: 0;
+  }
+}
+
+.show {
+  display: flex !important;
+  animation: slideDown 0.3s ease-in-out;
+}
+
+.hide {
+  animation: slideUp 0.3s ease-in-out;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
 }
