@@ -78,10 +78,16 @@ a:hover {
 }
 
 h1,
-h2,
-h3,
+h2{
+  color:#005b9b ;
+}
+h3{
+  color:#005b9b ;
+}
 h4,
-h5,
+h5{
+  color: white;
+}
 h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
@@ -322,60 +328,6 @@ h6 {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
 
-/* .header {
-  width: 100%;
-  height: 80px; 
-  background-color: #fff; 
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 0 20px;
-}
-
-
-.header .logo {
-  line-height: 1;
-}
-
-.header .logo-img {
-   
-    max-width: 150px; 
-    width: 100%; 
-    height: auto; 
-
-}
-
-.header .logo h1 {
-  font-size: 30px;
-  margin: 0;
-  font-weight: 300;
-  color: var(--heading-color);
-} 
-.logo img {
-  height: 230px; 
-  width: auto; 
-}
-
-
-.navmenu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-}
-
-.navmenu ul li {
-  padding: 0 10px;
-}
-
-.navmenu ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-.navmenu ul li a:hover {
-  color: #007bff;
-} 
 
 
 /*--------------------------------------------------------------
@@ -613,136 +565,7 @@ h6 {
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
-/* .footer {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  border-top: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
-  font-size: 14px;
-  position: relative;
-}
 
-.footer .footer-top {
-  padding-top: 50px;
-}
-
-.footer .footer-about .logo {
-  line-height: 1;
-  margin-bottom: 25px;
-}
-
-.footer .footer-about .logo img {
-  max-height: 40px;
-  margin-right: 6px;
-}
-
-.footer .footer-about .logo span {
-  color: var(--heading-color);
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  font-family: var(--heading-font);
-}
-
-.footer .footer-about p {
-  font-size: 14px;
-  font-family: var(--heading-font);
-}
-
-.footer .social-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 50%);
-  font-size: 16px;
-  color: var(--accent-color);
-  margin-right: 10px;
-  transition: 0.3s;
-}
-
-.footer .social-links a:hover {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  border-color: var(--accent-color);
-}
-
-.footer h4 {
-  font-size: 16px;
-  font-weight: bold;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-.footer .footer-links {
-  margin-bottom: 30px;
-}
-
-.footer .footer-links h4{
- 
-  padding-bottom: 0;
-}
-.divider{
-  border-top: 5px solid var(--accent-color-1);
-  width: 50%;
-}
-
-.footer .footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer .footer-links ul i {
-  padding-right: 2px;
-  font-size: 12px;
-  line-height: 0;
-}
-
-.footer .footer-links ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-
-.footer .footer-links ul li:first-child {
-  padding-top: 0;
-}
-
-.footer .footer-links ul a {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  display: inline-block;
-  line-height: 1;
-}
-
-.footer .footer-links ul a:hover {
-  color: var(--accent-color);
-}
-
-.footer .footer-contact p {
-  margin-bottom: 5px;
-}
-
-.footer .copyright {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background-color: var(--accent-color-1);
-  color: var(--contrast-color);
-}
-
-.footer .copyright p {
-  margin-bottom: 0;
-}
-
-.footer .credits {
-  margin-top: 4px;
-  font-size: 13px;
-}
-
-.footer .credits a {
-  color: color-mix(in srgb, var(--contrast-color), transparent 30%);
-} */
 .footer-top {
   text-align: center;
   padding: 20px;
@@ -750,15 +573,7 @@ h6 {
   color: white;
 }
 
-.footer-register-btn {
-  padding: 10px 20px;
-  margin-top: 10px;
-  border: none;
-  background-color: 
-  #005b9b;
-  color: white;
-  cursor: pointer;
-}
+
 
 .footer {
   background-color: #222;
@@ -788,57 +603,40 @@ h6 {
 .footericon {
   width: 230px;
   height: 200px;
+  
 }
 
 .footer-heading {
   margin-bottom: 15px;
+  text-align: center;
 }
 
-.footer-links {
-  list-style: none;
-  padding: 0;
-}
 
-.footer-links li {
-  margin: 5px 0;
-}
 
 .footer-links a {
   color: white;
   text-decoration: none;
 }
 
-.footer-links a:hover {
-  text-decoration: underline;
+
+.social-icon a{
+  font-size: 25px;
+}
+.fa-brands{
+  font-size: 25px;
+  margin: 8px;
+  padding: 0px;
+  margin-right: 8px;
+}
+ul{
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
 }
 
-.subscribe-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
 
-.subscribe-input {
-  padding: 10px;
-  width: 100%;
-  max-width: 250px;
-  border: none;
-}
 
-.subscribe-btn {
-  padding: 10px 20px;
-  border: none;
-  background-color: 
-  #005b9b;
-  color: white;
-  cursor: pointer;
-}
-.footer .copyright p {
-  margin-bottom: -60px;
 
-  background-color: 
-  #005b9b;
-}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -993,10 +791,12 @@ section,
   font-weight: 700;
   margin-bottom: 15px;
   text-transform: uppercase;
+ color: #005b9b; 
 }
 
 .section-title p {
   margin-bottom: 0;
+  
 }
 
 /*--------------------------------------------------------------
@@ -1381,7 +1181,54 @@ section,
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
-
+/*--------------------------------------------------------------
+# Solution Section
+--------------------------------------------------------------*/
+.solutions-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+.solutions-section h2 {
+  font-weight: bold;
+  color: #005b9b;
+  font-size: 45px;
+}
+.solution-card {
+  border: 1px solid #005b9b;
+  border-radius: 20px;
+  padding: 20px 20px 20px 20px;
+  text-align: left;
+  transition: all 0.3s ease;
+  background: white;
+  display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+   
+        
+  
+    gap: 20px;
+}
+.solution-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.solution-title {
+  font-size: 35px;
+  font-weight: bold;
+  color: #005b9b;
+}
+.explore-btn {
+  background-color: #005b9b;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+.explore-btn:hover {
+  background-color: #005b9b;
+}
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -2197,18 +2044,67 @@ section,
   margin: 0 0 15px 0 0 0;
   padding: 0;
 }
-.gradient-custom {
-  background: radial-gradient(50% 123.47% at 50% 50%, #00ff94 0%, #720059 100%),
-    linear-gradient(121.28deg, #669600 0%, #ff0000 100%),
-    linear-gradient(360deg, #0029ff 0%, #8fff00 100%),
-    radial-gradient(100% 164.72% at 100% 100%, #6100ff 0%, #00ff57 100%),
-    radial-gradient(100% 148.07% at 0% 0%, #fff500 0%, #51d500 100%);
-  background-blend-mode: screen, color-dodge, overlay, difference, normal;
+.testimonial-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #003366, #00509d);
+  color: white;
 }
-.carousel-indicators {
+.testimonial-section h6 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  opacity: 0.8;
+}
+.testimonial-section h2 {
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+  transition: transform 0.3s ease;
+}
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+.testimonial-text {
+  font-style: italic;
+  font-size: 16px;
+}
+.quote-icon {
+  font-size: 40px;
+  color: #ffcc00;
+}
+.rating {
+  color: #ffcc00;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.carousel-control-prev, .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
 }
 /*--------------------------------------------------------------
 # Service Details Section

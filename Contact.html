@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>About Us</title>
+  <title>Contact Us</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -26,6 +26,8 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -116,6 +118,92 @@
  
 
 </style>
+<style>
+.contact-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.contact-box {
+  background: #00448a;
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.contact-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background: #ffcc00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #003366;
+  margin: 0 auto 15px;
+  transition: transform 0.3s ease;
+}
+.contact-box:hover .icon-circle {
+  transform: rotate(360deg);
+}
+.contact-box h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.contact-box p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Contact Form Styling */
+.contact-form-section {
+
+  
+  background: white;
+  overflow: hidden;
+    background-image: url('./assets/img/Icon-maxwattlogo.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 130px;
+    width: 100%;
+    height: 100%;
+}
+.contact-form-container {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.contact-form input,
+.contact-form textarea {
+  border-radius: 8px;
+}
+.contact-form button {
+  background: #00448a;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+.contact-form button:hover {
+  background: #ffcc00;
+  color: #003366;
+}
+
+
+</style>
 </head>
 
 <body class="index-page">
@@ -142,74 +230,102 @@
  
  <section id="hero" class="hero section">
 
-       <!-- <img src="./assets/img/maxwat img/about.jpg" alt="" data-aos="fade-in" class="">  -->
+       <img src="./assets/img/maxwat img/about.jpg" alt="" data-aos="fade-in" class=""> 
         
-       <video class="video-bg" autoplay muted loop playsinline>
+       <!-- <video class="video-bg" autoplay muted loop playsinline>
         <source src="./assets/img/maxwat img/videoplaybackabout.mp4" type="video/mp4">
-       </video>
+       </video> -->
        
       <div class="container">
         <div class="row justify-content-center" data-aos="zoom-out">
           <div class="col-xl-11 text-center">
-            <h1 style="color: #ea9627;"> About MaxWatt <span style="color: #005b9b;">Energy Future</span></h1>
+            <h1 style="color: #ea9627;"> Contact  <span style="color: #005b9b;">Us</span></h1>
             <p >  HERE TO MAKE A DIFFIRENCE</p>
             
-            <!-- <a href="https://maxwatt.pk/#home-projects" class="btn">
-              About Us
-            </a> -->
+           
           </div>
         </div>
       </div>
-    </section><!-- /Hero Section -->
+    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About Us<br></h2>
-        <p class="card-text">Max Watt innovative and sustainable energy solutions
-       Welcome to Max Watt Energy, your trusted partner in harnessing the power of the sun. We are a dynamic solar energy company committed to delivering innovative and sustainable energy solutions.
-
-            At Max Watt Energy, we specialize in providing end-to-end services as an EPC (Engineering, Procurement, and Construction) contractor.</p>
-      </div>
-    </section><!-- /About Section -->
-
-  
-    
- 
-
-
-    <section class="py-5">
-      <div class="container">
-          <h2 class="text-center section-title mb-4">Our Mission & Vision</h2>
-          <div class="row g-4">
-              <!-- Mission -->
-              <div class="col-md-6">
-                  <div class="card shadow-sm mission-card">
-                      <div class="card-body">
-                          <h3 class="card-title text-primary">Mission</h3>
-                          <p class="card-text">
-                              MaxWatt Energy is on a mission to make a powerful impact by delivering innovative, reliable, and affordable solar energy solutions. We strive to harness the immense power of the sun to drive Pakistan’s transition to sustainable, clean energy for homes and businesses, reducing dependence on conventional energy sources and fostering a brighter, greener future.
-                          </p>
-                      </div>
+   <!-- Contact Info Section -->
+<section class="contact-section">
+  <div class="container">
+      <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+              <div class="contact-box">
+                  <div class="icon-circle">
+                      <i class="fas fa-envelope"></i>
                   </div>
+                  <h5>Email</h5>
+                  <p>Info@maxwatt.pk</p>
               </div>
-              <!-- Vision -->
-              <div class="col-md-6">
-                  <div class="card shadow-sm vision-card">
-                      <div class="card-body">
-                          <h3 class="card-title text-success">Vision</h3>
-                          <p class="card-text">
-                              Our vision at MaxWatt Energy is to create a transformative shift toward renewable energy across Pakistan. We aim to lead the way in providing accessible, solar-powered solutions that promote economic growth, environmental sustainability, and energy independence, empowering communities with the limitless potential of solar energy.
-                          </p>
-                      </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+              <div class="contact-box">
+                  <div class="icon-circle">
+                      <i class="fab fa-whatsapp"></i>
                   </div>
+                  <h5>WhatsApp</h5>
+                  <p>+92 300-6299866</p>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+              <div class="contact-box">
+                  <div class="icon-circle">
+                      <i class="fas fa-phone"></i>
+                  </div>
+                  <h5>Phone</h5>
+                  <p>+92 300-6299866</p>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+              <div class="contact-box">
+                  <div class="icon-circle">
+                      <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <h5>Office Address</h5>
+                  <p>Office No.1 Ground Floor,New Climate Plaza2,St#3 G-13/2,Islamabad</p>
               </div>
           </div>
       </div>
-  </section>
+  </div>
+</section>
 
+  
+    
+<section class="contact-form-section">
+  <div class="container position-relative">
+                                                                                                                          
+      
+      <div class="row justify-content-center">
+          <div class="col-md-8">
+            
+              <div class="contact-form-container">
+                  
+                  <h3 class="text-center mb-4">Contact Us</h3>
+                  <form>
+                      <div class="mb-3">
+                          <label for="name" class="form-label">Full Name</label>
+                          <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                      </div>
+                      <div class="mb-3">
+                          <label for="email" class="form-label">Email Address</label>
+                          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                      </div>
+                      <div class="mb-3">
+                          <label for="message" class="form-label">Message</label>
+                          <textarea class="form-control" id="message" rows="4" placeholder="Your message" required></textarea>
+                      </div>
+                      <div class="text-center">
+                          <button type="submit" class="btn">Send Message</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div> 
+  </div>
+</section>
 
       <section class="contact-section">
           <div class="contact-header">
@@ -217,10 +333,8 @@
               <h3>Feel Free To Contact Our Team.</h3>
               <p>If you have anything in mind just contact our expert.</p>
               <div class="buttons">
-                  <!-- <button class="btn blue">Contact US</button> -->
-                  <a href="./Contact.html" class="btn blue">Contact Us</a>
-                  <a href="./Contact.html" class="btn orange">Free Survey</a>
-                 
+                  <button class="btn blue">Contact US</button>
+                  <button class="btn orange">Free Survey</button>
               </div>
           </div>
          
@@ -244,7 +358,7 @@
         </div>
 
         <!-- Company Links -->
-  
+   
         <div class="col-lg-2 col-6 footer-links">
           <h4>Social Links</h4>
           <hr class="divider">
@@ -289,6 +403,7 @@
   
   <script src="assets/js/main.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
@@ -336,4 +451,5 @@
     });
   </script>
 </body>
+
 </html>
