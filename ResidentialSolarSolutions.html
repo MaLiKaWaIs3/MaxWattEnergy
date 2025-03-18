@@ -48,15 +48,21 @@
         transform: translateY(-5px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     }
-    .card-title {
+    .card-title1 {
         font-size: 25px;
         font-weight: 700;
+        color: #005b9b;
+    }
+    .card-title2 {
+        font-size: 25px;
+        font-weight: 700;
+        color: #ea962b;
     }
     .mission-card {
-        border-left: 5px solid #007bff;
+        border-left: 5px solid #005b9b;
     }
     .vision-card {
-        border-left: 5px solid #28a745;
+        border-left: 5px solid #ea962b;
     }
     .card-text {
         font-size: 1rem;
@@ -66,84 +72,38 @@
     }
 
 </style>
-<style>
-
-  .contact-section {
-      text-align: left;
-      padding: 30px;
-      background: #ddd;
-      padding-bottom: 50px;
-  }
-  .contact-header h2 {
-      color: #005b9b;
-      font-weight: bold;
-  }
-  .contact-header h3 {
-      color: #005b9b;
-      font-weight: bold;
-  }
-  .contact-header p {
-      color: #666;
-      margin-bottom: -5rem;
-  }
-  .buttons {
-    margin: -10px 50px;
-    text-align: end;
-      
-  }
-  .btn {
-      padding: 10px 20px;
-      border: none;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 20px;
-      margin: 10px;
-  }
-  .blue {
-      background: #005b9b;
-      color: white;
-  }
-  .orange {
-      background: #f25c05;
-      color: white;
-  }
-  .info {
-   
-    text-align: justify;
-    font-size: large;
-    letter-spacing: normal;
-}
-     
- 
-
-</style>
 </head>
 
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+     
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
         <img src="./assets/img/maxwat img/logo.png" alt="Logo">
       </a>
-      <nav id="navmenu" class="navmenu d-none d-lg-block">
-        <ul class="d-flex">
-          <li><a href="/index.html" class="active">Home<br></a></li>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="./index.html" class="active">Home<br></a></li>
           <li><a href="./about.html" class="active">About</a></li>
           <li><a href="#services" class="active">Services</a></li>
-          <li><a href="#portfolio-details" class="active">Projects</a></li>
-          <li><a href="#team" class="active">Team</a></li>
+          <li><a href="#portfolio-details"class="active">Projects</a></li>
+          <li><a href="#team"class="active">Teams</a></li>
           <li><a href="./Contact.html" class="active">Contact</a></li>
         </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-      <i class="mobile-nav-toggle d-lg-none bi bi-list"></i>
-    </div>
+     
+     
+  </div>
+ 
+ 
   </header>
   <main class="main">
  
  <section id="hero" class="hero section">
 
-        <img src="./assets/img/maxwat img/Residential.png"       alt="" data-aos="fade-in" class="">  
+        <img src="./assets/img/maxwat img/Residential.png" alt="" data-aos="fade-in" class="">  
         
        
       <div class="container">
@@ -151,21 +111,16 @@
           <div class="col-xl-11 text-center">
             <h1 style="color: #ea9627;"> Residential  <span style="color: #005b9b;">Solar Solutions</span></h1>
             <p > Generate Mega Savings with MaxWatt Energy</p>
-            <p class="card-text">MaxWatt Energy's Residential Solar Solutions provide customized, renewable energy for your home, ensuring a smooth transition to solar power. Enjoy major savings, reduced reliance on traditional energy.</p>
+            <p class="card-text">MaxWatt Energy's Residential Solar Solutions provide customized,renewable energy for your home,ensuring a smooth transition to solar power.Enjoy major savings,reduced reliance on traditional energy.</p>
             
           
           </div>
         </div>
       </div>
     </section>
-
-
-
-  
-    
- 
-
-
+    <a href="https://wa.me/923006299866" target="_blank" class="whatsapp-icon">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
     <section class="py-5">
       <div class="container">
           <h2 class="text-center section-title mb-4">Our Mission & Vision</h2>
@@ -174,9 +129,9 @@
               <div class="col-md-6">
                   <div class="card shadow-sm mission-card">
                       <div class="card-body">
-                          <h3 class="card-title text-primary">On-Grid/Grid-Tied Solar System</h3>
+                          <h3 class="card-title1">On-Grid/Grid-Tied Solar System</h3>
                           <p class="card-text">
-                            An On-Grid Solar System connects to the public grid, supplying solar power while sending excess energy back. It doesn’t need battery storage, allowing users to sell surplus power and draw from the grid when needed, reducing electricity bills and maximizing efficiency through net metering.
+                            An On-Grid Solar System connects to the public grid,supplying solar power while sending excess energy back.It doesn’t need battery storage,allowing users to sell surplus power and draw from the grid when needed,reducing electricity bills and maximizing efficiency through net metering.
                           </p>
                       </div>
                   </div>
@@ -184,9 +139,9 @@
               <div class="col-md-6">
                   <div class="card shadow-sm vision-card">
                       <div class="card-body">
-                          <h3 class="card-title text-success">Hybrid Solar System with Battery</h3>
+                          <h3 class="card-title2">Hybrid Solar System with Battery</h3>
                           <p class="card-text">
-                            A Hybrid Solar System combines on-grid and off-grid benefits by storing excess solar energy in batteries for use during low generation periods or grid outages. It enhances energy independence, reduces electricity bills, and ensures an uninterrupted power supply.
+                            A Hybrid Solar System combines on-grid and off-grid benefits by storing excess solar energy in batteries for use during low generation periods or grid outages.It enhances energy independence,reduces electricity bills,and ensures an uninterrupted power supply.
                           </p>
                       </div>
                   </div>
@@ -195,38 +150,21 @@
       </div>
   </section>
 
-   
-
-      
-
+  <section class="contact-section-flex">
+    <div class="contact-header">
+        <h2>Want To Chat?</h2>
+        <h3>Feel Free To Contact Our Team.</h3>
+        <p>If you have anything in mind just contact our expert.</p>
+        <div class="buttons">
+            <!-- <button class="btn blue">Contact US</button> -->
+            <a href="./Contact.html" class="btn blue">Contact Us</a>
+            <a href="./Contact.html" class="btn orange">Free Survey</a>
+        </div>
+    </div>
+</section>
  
- 
-  
-    
-    
- 
-
-      <section class="contact-section">
-          <div class="contact-header">
-              <h2>Want To Chat?</h2>
-              <h3>Feel Free To Contact Our Team.</h3>
-              <p>If you have anything in mind just contact our expert.</p>
-              <div class="buttons">
-                <!-- <button class="btn blue">Contact US</button> -->
-                <a href="./Contact.html" class="btn blue">Contact Us</a>
-                <a href="./Contact.html" class="btn orange">Free Survey</a>
-               
-            </div>
-          </div>
-         
-      </section>
- 
- 
-  
   </main>
 
-  
- 
 
 <footer class="footer">
     <div class="footer-container">
@@ -243,7 +181,7 @@
             <p><i class="bi bi-geo-alt flex-shrink-0"></i>Office No.1Ground Floor,<br>New Climate Plaza2,St#3 G-13/2,Islamabad</p>
         </div>
 
-        <!-- Company Links -->
+       
        
 
         
@@ -295,50 +233,6 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      const lines = [
-        "We Build Smart IT Solutions, Tailored for You",
-        "Empowering Startups to Transform Ideas into Reality.",
-        "From Vision to Execution, We’re Your IT Partner.",
-        "Your Growth is Our Priority; Let’s Achieve It Together.",
-        "Innovative IT Services, Designed to Solve Complex Problems.",
-        "Reliable Support for Every Step of Your Startup Journey.",
-        "Smart, Scalable, and Seamless IT Solutions for All.",
-        "We Simplify Technology, So You Can Focus on Success.",
-        "Fueling Ambitions with World-Class IT Expertise.",
-        "Let’s Innovate, Collaborate, and Create the Future Together.",
-      ];
-      let currentLine = 0;
-      let currentChar = 0;
-      const typingSpeed = 100;
-      const deletingSpeed = 50;
-      const pauseBetweenLines = 1000;
-
-      function typeLine() {
-        if (currentChar < lines[currentLine].length) {
-          $("#typing-effect").text(lines[currentLine].substring(0, currentChar + 1));
-          currentChar++;
-          setTimeout(typeLine, typingSpeed);
-        } else {
-          setTimeout(deleteLine, pauseBetweenLines);
-        }
-      }
-
-      function deleteLine() {
-        if (currentChar > 0) {
-          $("#typing-effect").text(lines[currentLine].substring(0, currentChar - 1));
-          currentChar--;
-          setTimeout(deleteLine, deletingSpeed);
-        } else {
-          currentLine = (currentLine + 1) % lines.length; 
-          setTimeout(typeLine, typingSpeed);
-        }
-      }
-
-      typeLine(); 
-    });
-  </script>
+  
 </body>
-
 </html>

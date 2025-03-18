@@ -92,7 +92,33 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
+/* whatsapp Button
+------------------------------*/
+.whatsapp-icon {
+  position:fixed;
+  bottom: 65px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 9999;
+}
 
+.whatsapp-icon:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-icon img {
+  width: 35px;
+  height: 35px;
+}
 /* Pulsating Play Button
 ------------------------------*/
 .btn {
@@ -104,7 +130,7 @@ h6 {
   padding: 10px 15px;
   border: 2px solid #fdc111;
   border-radius: 100px;
-  margin-right: 10px;
+  margin-right: 5px;
   transition: all 0.3s ease-in-out;
   display: inline-block;
   margin-left: 10px;
@@ -200,17 +226,20 @@ h6 {
   height: 80px; /* Default height */
   background-color: hwb(0 100% 0%);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 0 20px;
+  padding: 20px 0;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+  transition: all 0.5s;
 }
 
 /* Logo Styling */
 .logo img {
   height: 230px;
-  width: auto; /* Keeps aspect ratio */
+  width: auto;
+  line-height: 1; /* Keeps aspect ratio */
 }
 
 /* Navigation Menu */
@@ -408,7 +437,7 @@ h6 {
   .navmenu ul {
     display: none;
     list-style: none;
-    /* position: absolute; */
+     position: absolute; 
     inset: 50px 10px 20px 10px;
     padding: 10px 0;
     margin: 0;
@@ -417,7 +446,7 @@ h6 {
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
-    /* box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1); */
+     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1); 
   }
 
   .navmenu a,
@@ -480,9 +509,14 @@ h6 {
     transition: all 0.5s ease-in-out;
   } 
 
+  .navmenu .dropdown ul ul {
+    background-color: rgba(33, 37, 41, 0.1);
+  }
 
-
-  
+  .navmenu .dropdown>.dropdown-active {
+    display: block;
+    background-color: rgba(33, 37, 41, 0.03);
+  }
 
   .mobile-nav-active {
     overflow: hidden;
@@ -707,25 +741,116 @@ ul{
 }
 
 /*--------------------------------------------------------------
-# Global Sections
+# want to chat  Sections
 --------------------------------------------------------------*/
-section,
-.section {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 60px 0;
-  scroll-margin-top: 100px;
-  overflow: clip;
+.contact-section-flex {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 50px 20px;
+  background: #e2e2e2;
 }
 
-@media (max-width: 1199px) {
+/* Header Styling */
+.contact-header {
+  max-width: 600px;
+}
 
-  section,
-  .section {
-    scroll-margin-top: 76px;
+/* Heading */
+.contact-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.contact-header h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.contact-header p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #666;
+}
+
+/* Buttons Container */
+.buttons {
+  display: flex;
+  flex-wrap: wrap; /* Ensures buttons wrap on smaller screens */
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* Button Styling */
+.btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.blue {
+  background-color: #005b9b;
+  color: white;
+}
+
+.orange {
+  background-color:#ea962b;
+  color: white;
+}
+
+/* Button Hover */
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .contact-header h2 {
+      font-size: 2rem;
+  }
+
+  .contact-header h3 {
+      font-size: 1.3rem;
+  }
+
+  .contact-header p {
+      font-size: 1rem;
+  }
+
+  .buttons {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .btn {
+      width: 40%;
+      text-align: center;
   }
 }
 
+@media (max-width: 480px) {
+  .contact-header h2 {
+      font-size: 1.8rem;
+  }
+
+  .contact-header h3 {
+      font-size: 1.2rem;
+  }
+
+  .contact-header p {
+      font-size: 0.95rem;
+  }
+
+  .btn {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+  }
+}
 /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
@@ -738,10 +863,12 @@ section,
 .section-title h2 {
   font-size: 35px;
   font-weight: 700;
-  margin-bottom: 15px;
   text-transform: uppercase;
- color: #005b9b; 
+  color: #005b9b;
+  padding-top: 40px;
+  margin-bottom: -30px;
 }
+
 
 .section-title p {
   margin-bottom: 0;
@@ -752,15 +879,6 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
 .hero {
   width: 100%;
   min-height: calc(100vh - 100px);
@@ -831,22 +949,9 @@ section,
   }
 }
 
-.hero .btn-get-started {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  display: inline-block;
-  padding: 14px 50px;
-  border-radius: 5px;
-  transition: 0.5s;
-  margin-top: 30px;
-}
 
-.hero .btn-get-started:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
-}
+
+
 
 .hero .icon-box {
   background-color: var(--surface-color);
@@ -901,6 +1006,33 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about {
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0 60px 0;
+  overflow: hidden;
+}
+
+.about:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+.about img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
 .about ul {
   list-style: none;
   padding: 0;
@@ -946,6 +1078,78 @@ section,
 
 .about .read-more:hover i {
   transform: translate(5px, 0);
+}
+
+/* .. */
+/* Full-screen section styling */
+.about-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Background Image Styling */
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.background-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%); /* Darkens image for text readability */
+}
+
+/* Content Styling */
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Title */
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Paragraph */
+.about-text {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Button */
+.explore-btn {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-title {
+      font-size: 2rem;
+  }
+
+  .about-text {
+      font-size: 1rem;
+  }
+
+  .explore-btn {
+      font-size: 1rem;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1141,7 +1345,7 @@ section,
 .solutions-section h2 {
   font-weight: bold;
   color: #005b9b;
-  font-size: 5px;
+  font-size: 35px;
   text-transform: uppercase;
 }
 .solution-card {
@@ -1155,9 +1359,6 @@ section,
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: flex-start;
-   
-        
-  
     gap: 20px;
 }
 .solution-card:hover {
@@ -1190,7 +1391,8 @@ section,
   padding: 60px 30px;
   text-align: center;
   transition: 0.3s;
-  border-radius: 5px;
+  border-radius: 50px;
+   margin-top: -25px;
 }
 
 .services .service-item .icon {
@@ -1237,87 +1439,6 @@ section,
   box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
 }
 
-.services .service-item.item-cyan i {
-  color: #0dcaf0;
-}
-
-.services .service-item.item-cyan:hover .icon i {
-  color: #fff;
-}
-
-.services .service-item.item-cyan:hover .icon path {
-  fill: #0dcaf0;
-}
-.services .service-item.item-Black i {
-  color: #03380e;
-}
-
-.services .service-item.item-black:hover .icon i {
-  color: #fff;
-}
-
-.services .service-item.item-black:hover .icon path {
-  fill: #0df086;
-}
-.services .service-item.item-orange i {
-  color: #fd7e14;
-}
-
-.services .service-item.item-orange:hover .icon i {
-  color: #fff;
-}
-
-.services .service-item.item-orange:hover .icon path {
-  fill: #fd7e14;
-}
-
-.services .service-item.item-teal i {
-  color: #20c997;
-}
-
-.services .service-item.item-teal:hover .icon i {
-  color: #fff;
-}
-
-.services .service-item.item-teal:hover .icon path {
-  fill: #20c997;
-}
-
-.services .service-item.item-red i {
-  color: #df1529;
-}
-
-.services .service-item.item-red:hover .icon i {
-  color: #fff;
-}
-
-.services .service-item.item-red:hover .icon path {
-  fill: #df1529;
-}
-
-.services .service-item.item-indigo i {
-  color: #6610f2;
-}
-
-.services .service-item.item-indigo:hover .icon i {
-  color: #fff;
-}
-
-.services .service-item.item-indigo:hover .icon path {
-  fill: #6610f2;
-}
-
-.services .service-item.item-pink i {
-  color: #f3268c;
-}
-
-.services .service-item.item-pink:hover .icon i {
-  color: #fff;
-}
-
-.services .service-item.item-pink:hover .icon path {
-  fill: #f3268c;
-}
 
 /*--------------------------------------------------------------
 # Call To Action Section
@@ -1668,43 +1789,45 @@ section,
   height: 100%;
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form textarea {
-  font-size: 14px;
-  padding: 10px 15px;
-  box-shadow: none;
-  border-radius: 0;
-  color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+.info-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #f8f9fa; /* Light background */
+  padding: 15px;
+  border-radius: 8px;
+  height: 100%; /* Ensure equal height */
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
+.info-item i {
+  font-size: 24px;
+  color: #007bff;
+  margin-right: 15px;
 }
 
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+.contact .col-lg-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.contact .php-email-form button[type=submit] {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-  border: 0;
-  padding: 10px 30px;
-  transition: 0.4s;
-  border-radius: 4px;
+.contact .info-item p {
+  margin: 0;
 }
 
-.contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+.contact .col-lg-8 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.contact-form-container {
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
@@ -2061,53 +2184,14 @@ section,
   transform: scale(1.1);
 }
 
-/* Dropdown Menu */
-#myLinks {
-  display: none;
-  flex-direction: column;
- 
-  border-radius: 0 0 10px 10px;
+
+.dropdown-menu {
+  border-radius: 8px;
   overflow: hidden;
 }
 
-#myLinks a {
-  color: white;
-  padding: 20px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  display: block;
-  transition:  0.3s ease;
 
-}
 
-#myLinks a:hover {
-  background: #005b9b;
-  color: white;
-  
-}
-
-/* Slide Down Animation */
-@keyframes slideDown {
-  from {
-    max-height: 0;
-    opacity: 0;
-  }
-  to {
-    max-height: 200px;
-    opacity: 1;
-  }
-}
-
-@keyframes slideUp {
-  from {
-    max-height: 200px;
-    opacity: 1;
-  }
-  to {
-    max-height: 0;
-    opacity: 0;
-  }
-}
 
 .show {
   display: flex !important;
@@ -2120,3 +2204,5 @@ section,
   max-height: 0;
   overflow: hidden;
 }
+
+

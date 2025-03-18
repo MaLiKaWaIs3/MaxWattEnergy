@@ -39,10 +39,11 @@
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+     
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
         <img src="./assets/img/maxwat img/logo.png" alt="Logo">
       </a>
-      <nav id="navmenu" class="navmenu d-none d-lg-block">
+      <!-- <nav id="navmenu" class="navmenu ">
         <ul class="d-flex">
           <li><a href="./index.html" class="active">Home<br></a></li>
           <li><a href="./about.html" class="active">About</a></li>
@@ -51,45 +52,33 @@
           <li><a href="#team" class="active">Teams</a></li>
           <li><a href="./Contact.html" class="active">Contact</a></li>
         </ul>
+      </nav> -->
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="./index.html" class="active">Home<br></a></li>
+          <li><a href="./about.html" class="active">About</a></li>
+          <li><a href="#services" class="active">Services</a></li>
+          <li><a href="#portfolio-details"class="active">Projects</a></li>
+          <li><a href="#team"class="active">Teams</a></li>
+          <li><a href="./Contact.html" class="active">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-      <i class="mobile-nav-toggle d-lg-none bi bi-list"></i></a>
+     
+     
   </div>
-  <div class="mobile-container">
-    <!-- Hidden Menu Links -->
-    <div id="myLinks">
-      <a href="./index.html">Home</a>
-      <a href="./about.html">About</a>
-      <a href="#Services">Services</a>
-      <a href="#portfolio-details">Projects</a>
-      <a href="#team">Team</a>
-      <a href="./Contact.html">Contact</a>
-    </div>
-  </div>
-  <script>
-  function toggleMenu() {
-    var menu = document.getElementById("myLinks");
-    
-    if (menu.style.display === "flex") {
-      menu.classList.remove("show");
-      menu.classList.add("hide");
-      setTimeout(() => {
-        menu.style.display = "none";
-      }, 300);
-    } else {
-      menu.style.display = "flex";
-      menu.classList.remove("hide");
-      menu.classList.add("show");
-    }
-  }
-  </script>
+ 
+ 
   </header>
   <main class="main">
  
  <section id="hero" class="hero section">
 
-       <img src="./assets/img/maxwat img/future-of-solar-cover.jpg" alt="" data-aos="fade-in" class="">
-      <div class="container">
+       <!-- <img src="./assets/img/maxwat img/future-of-solar-cover.jpg" alt="" data-aos="fade-in" class=""> -->
+       <video class="video-bg" autoplay muted loop playsinline>
+        <source src="./assets/img/maxwat img/videoplaybackabout.mp4" type="video/mp4">
+       </video>
+       <div class="container">
         <div class="row justify-content-center" data-aos="zoom-out">
           <div class="col-xl-11 text-center">
             <h1 style="color: #ea9627;">MaxWatt <span style="color:#005b9b">Energy</span></h1>
@@ -107,22 +96,26 @@
         
       </div>
 
-    </section><!-- /Hero Section -->
+    </section>
+    <a href="https://wa.me/923006299866" target="_blank" class="whatsapp-icon">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <img src="./assets/img/maxwat img/about.jpg" alt="" data-aos="fade-in" class="">
-        <h2>About Us<br></h2>
-        <p>Max Watt innovative and sustainable energy solutions
-          Welcome to Max Watt Energy, your trusted partner in harnessing the power of the sun. We are a dynamic solar energy company committed to delivering innovative and sustainable energy solutions.
-            At Max Watt Energy, we specialize in providing end-to-end services as an EPC (Engineering, Procurement, and Construction) contractor Customers appreciate their expert guidance, efficient project execution.</p>
-                  <a href="./about.html" class="btn">
-              Explore More
-            </a>
-      </div><!-- End Section Title -->
-    </section><!-- /About Section -->
+    <section class="about-section d-flex align-items-center justify-content-center text-center">
+      <div class="background-img">
+        <img src="./assets/img/maxwat img/about-img.jpg" alt="About Us Image" data-aos="fade-in">
+    </div>
+      <div class="container">
+        <h1 style="color: #ea9627;"> About MaxWatt <span style="color: #005b9b;">Energy Future</span></h1>
+          <p class="about-text">
+            At MaxWatt,we are dedicated to delivering cutting-edge solar energy solutions that are dependable,
+            cost-effective,and eco-friendly.Our mission is to harness the power of the sun to drive Pakistan's
+            transition to clean energy,offering innovative solar systems for both residential and commercial needs.
+          </p>
+          <a href="./about.html" class="btn btn-primary explore-btn">Explore More</a>
+      </div>
+  </section>
+
     <section class="solutions-section">
       <h2>Our Solutions</h2>
       <p>Unlock the Mega Savings with MaxWatt Energy</p>
@@ -150,10 +143,9 @@
     <section id="services" class="services section light-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>With a focus on reliability, quality, and sustainability, we aim to empower homes, businesses, and industries with renewable energy solutions that make a difference. Choose Max Watt Energy to take the first step toward a brighter, greener future with cutting-edge technology and expert support.</p>
       </div>
    
-      <div class="vcex-spacing wpex-w-100 wpex-clear" style="height:70px;"></div>
+      <div class="vcex-spacing wpex-w-100 wpex-clear"></div>
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
@@ -220,7 +212,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item item-indigo position-relative">
               <div class="icon">
-                <img src="./assets/img/maxwat img/logo.png" width="100" height="100" viewBox="0 0 600 600" stroke="none" stroke-width="0" fill="#f5f5f5" alt="">
+                <img src="./assets/img/maxwat img/ICON.png" width="100" height="100" viewBox="0 0 600 600" stroke="none" stroke-width="0" fill="#f5f5f5" alt="">
               </div>
               <a href="#services" class="stretched-link">
                 <h2 class="vcex-icon-box-heading wpex-heading wpex-text-md wpex-mb-10">Battery Storage Solutions</h2>
@@ -267,12 +259,12 @@
             </div>
              <div class="swiper-slide">
              <div class="slider-cont">
-              <img src="./assets/img/maxwat img/p2.jpeg" alt="">
+              <img src="./assets/img/maxwat img/Deliverd projects-01 (1).png" alt="">
               </div>
             </div>
             <div class="swiper-slide">
              <div class="slider-cont">
-              <img src="./assets/img/maxwat img/p3.jpeg" alt="">
+              <img src="./assets/img/maxwat img/Deliverd projects-02 (1).png" alt="">
               </div>
             </div>
             <div class="swiper-slide">
@@ -341,6 +333,87 @@
                         </div>
                     </div>
                 </div>
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="testimonial-card col-md-8 col-lg-6 mx-auto">
+                            <h5>Malik (Islamabad)</h5>
+                            <div class="rating">★★★★★</div>
+                            <p class="quote-icon">“</p>
+                            <p class="testimonial-text">
+                              "MaxWatt Energy delivers customized solar EPC solutions across Pakistan,
+                              ensuring top-notch installations and exceptional after-sales service."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="testimonial-card col-md-8 col-lg-6 mx-auto">
+                            <h5>Bilal (Islamabad)</h5>
+                            <div class="rating">★★★★★</div>
+                            <p class="quote-icon">“</p>
+                            <p class="testimonial-text">
+                              "With MaxWatt Energy, you get expertly tailored solar EPC solutions in Pakistan,
+                               backed by high-quality installations and reliable post-installation support."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="testimonial-card col-md-8 col-lg-6 mx-auto">
+                            <h5>Atta Ur Rehman (DHA)</h5>
+                            <div class="rating">★★★★★</div>
+                            <p class="quote-icon">“</p>
+                            <p class="testimonial-text">
+                              "MaxWatt Energy specializes in premium solar EPC solutions in Pakistan, 
+                              offering seamless installations and dedicated 
+                              after-sales assistance for long-term reliability."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="testimonial-card col-md-8 col-lg-6 mx-auto">
+                            <h5>Abbasi (B-17 MultiGarden)</h5>
+                            <div class="rating">★★★★★</div>
+                            <p class="quote-icon">“</p>
+                            <p class="testimonial-text">
+                              "MaxWatt Energy stands out for its expert solar EPC services in Pakistan,
+                               delivering customized solutions with unmatched after-sales commitment."
+
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="testimonial-card col-md-8 col-lg-6 mx-auto">
+                            <h5>Zain (Taxila)</h5>
+                            <div class="rating">★★★★★</div>
+                            <p class="quote-icon">“</p>
+                            <p class="testimonial-text">
+                              "Reliable, efficient, and customer-focused—MaxWatt Energy ensures
+                               top-tier solar EPC installations in Pakistan with dedicated post-installation support."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="testimonial-card col-md-8 col-lg-6 mx-auto">
+                            <h5>Malik Ali (Islamabad)</h5>
+                            <div class="rating">★★★★★</div>
+                            <p class="quote-icon">“</p>
+                            <p class="testimonial-text">
+                              "MaxWatt Energy is a trusted name in Pakistan’s solar industry, 
+                              providing high-quality EPC solutions with a commitment to excellence and ongoing service."
+                            </p>
+                        </div>
+                    </div>
+                </div>
     
                 <div class="carousel-item">
                     <div class="container">
@@ -384,7 +457,7 @@
       document.addEventListener("DOMContentLoaded", function() {
           let myCarousel = document.querySelector("#testimonialCarousel");
           let carousel = new bootstrap.Carousel(myCarousel, {
-              interval: 2000, // Auto-slide every 5 seconds
+              interval: 3000,
               
           });
       });
@@ -467,89 +540,71 @@
           </iframe>
         </div>
 
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+       
+        <div class="row gy-4 d-flex justify-content-between" style="margin-bottom: 20px;">
+          <div class="col-lg-4 d-flex flex-column justify-content-between">
+            <div class="info-item" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h3>Address</h3>
-                <p>Office No.1 Ground Floor,New Climate Plaza2,St# 3 G-13/2,Islamabad</p>
+                <p>Office No.1 Ground Floor, New Climate Plaza 2, St# 3 G-13/2, Islamabad</p>
               </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            </div>
+            <div class="info-item" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3>Call Us</h3>
-                <p>+92 03006299866 </p>
+                <p>+92 03006299866</p>
               </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            </div>
+            <div class="info-item" data-aos="fade-up" data-aos-delay="500">
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Email Us</h3>
                 <p>Info@maxwatt.pk</p>
               </div>
-            </div><!-- End Info Item -->
-
+            </div>
           </div>
-
-          <div class="col-lg-8">
-            <section class="contact-form-section">
-              <div class="container position-relative">
-                                                                                                                                      
-                  
-                  <div class="row justify-content-center">
-                      <div class="col-md-8">
-                        
-                          <div class="contact-form-container">
-                              
-                              <h3 class="text-center mb-4">Contact Us</h3>
-                              <form>
-                                  <div class="mb-3">
-                                      <label for="name" class="form-label">Full Name</label>
-                                      <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-                                  </div>
-                                  <div class="mb-3">
-                                      <label for="email" class="form-label">Email Address</label>
-                                      <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                                  </div>
-                                  <div class="mb-3">
-                                      <label for="message" class="form-label">Message</label>
-                                      <textarea class="form-control" id="message" rows="4" placeholder="Your message" required></textarea>
-                                  </div>
-                                  <div class="text-center">
-                                      <button type="submit" class="btn">Send Message</button>
-                                  </div>
-                              </form>
-                          </div>
-                      </div>
-                  </div> 
-              </div>
-            </section>
-          </div><!-- End Contact Form -->
-
+        
+          <div class="col-lg-8 d-flex align-items-center">
+            <div class="contact-form-container">
+              <h3 class="text-center mb-4">Contact Us</h3>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="4" placeholder="Your message" required></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-
       </div>
 
     </section>
-  <section class="contact-section">
-    <div class="contact-header">
-        <h2>Want To Chat?</h2>
-        <h3>Feel Free To Contact Our Team.</h3>
-        <p>If you have anything in mind just contact our expert.</p>
-        <div class="buttons">
-          <!-- <button class="btn blue">Contact US</button> -->
-          <a href="./Contact.html" class="btn blue">Contact Us</a>
-          <a href="./Contact.html" class="btn orange">Free Survey</a>
-         
-      </div>
-    </div>
-   
-</section>
+
+  <section class="contact-section-flex">
+          <div class="contact-header">
+              <h2>Want To Chat?</h2>
+              <h3>Feel Free To Contact Our Team.</h3>
+              <p>If you have anything in mind just contact our expert.</p>
+              <div class="buttons">
+                  <!-- <button class="btn blue">Contact US</button> -->
+                  <a href="./Contact.html" class="btn blue">Contact Us</a>
+                  <a href="./Contact.html" class="btn orange">Free Survey</a>
+              </div>
+          </div>
+      </section>
   </main>
  
 <footer class="footer">
@@ -617,8 +672,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
- 
-  <script>
+  
+  <!-- <script>
     $(document).ready(function () {
       const lines = [
         "We Build Smart IT Solutions, Tailored for You",
@@ -661,7 +716,7 @@
 
       typeLine(); 
     });
-  </script>
+  </script> -->
 </body>
 
 </html>

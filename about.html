@@ -31,13 +31,11 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <style>
-  
-    .section-title { 
+    .section-title h2 { 
     color: #005b9b;
     line-height: 1.6; 
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 15px;
-   
 
     }
     .card {
@@ -46,17 +44,19 @@
     }
     .card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 10px 20px rgba(46, 46, 46, 0.15);
     }
     .card-title {
         font-size: 25px;
         font-weight: 700;
+  
     }
     .mission-card {
-        border-left: 5px solid #007bff;
+        border-left: 5px solid #005b9b;
     }
     .vision-card {
-        border-left: 5px solid #28a745;
+        border-left: 5px solid 
+        #ea962b;
     }
     .card-text {
         font-size: 1rem;
@@ -66,77 +66,32 @@
     }
 
 </style>
-<style>
 
-  .contact-section {
-      padding: 30px;
-      background: #ddd;
-      padding-bottom: 50px;
-  }
-  .contact-header h2 {
-      color: #005b9b;
-      font-weight: bold;
-  }
-  .contact-header h3 {
-      color: #005b9b;
-      font-weight: bold;
-  }
-  .contact-header p {
-      color: #666;
-      margin-bottom: -5rem;
-  }
-  .buttons {
-    margin: -10px 50px;
-    text-align: end;
-      
-  }
-  .btn {
-      padding: 10px 20px;
-      border: none;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 20px;
-      margin: 10px;
-  }
-  .blue {
-      background: #005b9b;
-      color: white;
-  }
-  .orange {
-      background: #f25c05;
-      color: white;
-  }
-  .info {
-   
-    text-align: justify;
-    font-size: large;
-    letter-spacing: normal;
-}
-     
- 
-
-</style>
 </head>
 
 <body class="index-page">
 
+
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+     
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
         <img src="./assets/img/maxwat img/logo.png" alt="Logo">
       </a>
-      <nav id="navmenu" class="navmenu d-none d-lg-block">
-        <ul class="d-flex">
+      <nav id="navmenu" class="navmenu">
+        <ul>
           <li><a href="/index.html" class="active">Home<br></a></li>
           <li><a href="./about.html" class="active">About</a></li>
           <li><a href="#services" class="active">Services</a></li>
-          <li><a href="#portfolio-details" class="active">Projects</a></li>
-          <li><a href="#team" class="active">Team</a></li>
+          <li><a href="#portfolio-details"class="active">Projects</a></li>
+          <li><a href="#team"class="active">Teams</a></li>
           <li><a href="./Contact.html" class="active">Contact</a></li>
         </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-      <i class="mobile-nav-toggle d-lg-none bi bi-list"></i>
-    </div>
+     
+     
+  </div>
   </header>
   <main class="main">
  
@@ -153,32 +108,29 @@
           <div class="col-xl-11 text-center">
             <h1 style="color: #ea9627;"> About MaxWatt <span style="color: #005b9b;">Energy Future</span></h1>
             <p >  HERE TO MAKE A DIFFIRENCE</p>
-            
-            <!-- <a href="https://maxwatt.pk/#home-projects" class="btn">
-              About Us
-            </a> -->
           </div>
         </div>
       </div>
     </section><!-- /Hero Section -->
-
+    <a href="https://wa.me/923006299866" target="_blank" class="whatsapp-icon">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
     <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About Us<br></h2>
-        <p class="card-text">Max Watt innovative and sustainable energy solutions
-          Welcome to Max Watt Energy, your trusted partner in harnessing the power of the sun. We are a dynamic solar energy company committed to delivering innovative and sustainable energy solutions.
-            At Max Watt Energy, we specialize in providing end-to-end services as an EPC (Engineering, Procurement, and Construction) contractor Customers appreciate their expert guidance, efficient project execution.</p>
+    <section class="about-section d-flex align-items-center justify-content-center text-center">
+      <div class="background-img">
+        <img src="./assets/img/maxwat img/about-img.jpg" alt="About Us Image" data-aos="fade-in">
+    </div>
+      <div class="container">
+        <h1 style="color: #ea9627;"> About <span style="color: #005b9b;">Us</span></h1>
+          <p class="about-text">
+              At MaxWatt,we are dedicated to delivering cutting-edge solar energy solutions that are dependable,
+              cost-effective,and eco-friendly.Our mission is to harness the power of the sun to drive Pakistan's
+              transition to clean energy,offering innovative solar systems for both residential and commercial needs.
+          </p>
       </div>
-    </section><!-- /About Section -->
+  </section>
 
-  
-    
- 
-
-
+  <!-- Our Mission & Vision -->
     <section class="py-5">
       <div class="container">
           <h2 class="text-center section-title mb-4">Our Mission & Vision</h2>
@@ -187,7 +139,7 @@
               <div class="col-md-6">
                   <div class="card shadow-sm mission-card">
                       <div class="card-body">
-                          <h3 class="card-title text-primary">Mission</h3>
+                          <h3 class="card-title">Mission</h3>
                           <p class="card-text">
                               MaxWatt Energy is on a mission to make a powerful impact by delivering innovative, reliable, and affordable solar energy solutions. We strive to harness the immense power of the sun to drive Pakistan’s transition to sustainable, clean energy for homes and businesses, reducing dependence on conventional energy sources and fostering a brighter, greener future.
                           </p>
@@ -198,7 +150,7 @@
               <div class="col-md-6">
                   <div class="card shadow-sm vision-card">
                       <div class="card-body">
-                          <h3 class="card-title text-success">Vision</h3>
+                          <h3 class="card-title">Vision</h3>
                           <p class="card-text">
                               Our vision at MaxWatt Energy is to create a transformative shift toward renewable energy across Pakistan. We aim to lead the way in providing accessible, solar-powered solutions that promote economic growth, environmental sustainability, and energy independence, empowering communities with the limitless potential of solar energy.
                           </p>
@@ -210,7 +162,7 @@
   </section>
 
 
-      <section class="contact-section">
+      <section class="contact-section-flex">
           <div class="contact-header">
               <h2>Want To Chat?</h2>
               <h3>Feel Free To Contact Our Team.</h3>
@@ -219,12 +171,9 @@
                   <!-- <button class="btn blue">Contact US</button> -->
                   <a href="./Contact.html" class="btn blue">Contact Us</a>
                   <a href="./Contact.html" class="btn orange">Free Survey</a>
-                 
               </div>
           </div>
-         
       </section>
- 
   </main>
 
 <footer class="footer">
@@ -290,49 +239,6 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      const lines = [
-        "We Build Smart IT Solutions, Tailored for You",
-        "Empowering Startups to Transform Ideas into Reality.",
-        "From Vision to Execution, We’re Your IT Partner.",
-        "Your Growth is Our Priority; Let’s Achieve It Together.",
-        "Innovative IT Services, Designed to Solve Complex Problems.",
-        "Reliable Support for Every Step of Your Startup Journey.",
-        "Smart, Scalable, and Seamless IT Solutions for All.",
-        "We Simplify Technology, So You Can Focus on Success.",
-        "Fueling Ambitions with World-Class IT Expertise.",
-        "Let’s Innovate, Collaborate, and Create the Future Together.",
-      ];
-      let currentLine = 0;
-      let currentChar = 0;
-      const typingSpeed = 100;
-      const deletingSpeed = 50;
-      const pauseBetweenLines = 1000;
-
-      function typeLine() {
-        if (currentChar < lines[currentLine].length) {
-          $("#typing-effect").text(lines[currentLine].substring(0, currentChar + 1));
-          currentChar++;
-          setTimeout(typeLine, typingSpeed);
-        } else {
-          setTimeout(deleteLine, pauseBetweenLines);
-        }
-      }
-
-      function deleteLine() {
-        if (currentChar > 0) {
-          $("#typing-effect").text(lines[currentLine].substring(0, currentChar - 1));
-          currentChar--;
-          setTimeout(deleteLine, deletingSpeed);
-        } else {
-          currentLine = (currentLine + 1) % lines.length; 
-          setTimeout(typeLine, typingSpeed);
-        }
-      }
-
-      typeLine(); 
-    });
-  </script>
+  
 </body>
 </html>
