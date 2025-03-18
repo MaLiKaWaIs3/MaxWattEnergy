@@ -1,0 +1,28 @@
+name: Deploy MaxWatt Energy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Runs workflow on push to main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4  # Checks out your repo
+
+      - name: Setup Node.js (Optional, if needed)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'  
+
+      - name: Build Project (If Needed)
+        run: echo "No build required for static site"
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages  # Deployment branch
+          folder: .  # Deploys everything in the root directory
